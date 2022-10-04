@@ -1,16 +1,17 @@
 body {
     display: flex;
     flex-direction: column;
-    font-family: Verdana, Geneva, Tahoma, sans-serif
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0px;
+    background-color: hsl(330, 50%, 90%);
 }
 
 .top-box {
     display: flex;
     flex-direction: column;
     color: white;
-    background-color: hsl(330, 50%, 40%);
     padding: 0px 300px;
-    
+    background-color: hsl(330, 50%, 20%);
 }
 
 .header {
@@ -46,7 +47,7 @@ ul {
 }
 
 li {
-    background-color: hsl(240, 25%, 25%);
+    font-weight: bold;
     color: white;
     padding: 0px 5px;
 }
@@ -58,7 +59,20 @@ li {
     text-align: center;
     max-width: 200px;
     padding: 16px;
+    /*
+    border-radius: 10px;
+    border-style: double;
+    border-color:hsl(330, 50%, 20%);
+    */
 }
+
+.pretty-minion-pic {
+    border-radius: 10px;
+    border-style: dashed;
+    border-width: 5px;
+    border-color:hsl(330, 50%, 20%);
+}
+
 
 .minion-plee {
     
@@ -72,7 +86,7 @@ li {
     display: flex;
     justify-content: center;
     color: white;
-    background-color:hsl(240, 50%, 50%);
+    background-color:hsl(240, 50%, 20%);
     margin: 50px 240px;
     border-radius:10px;
 }
@@ -90,19 +104,43 @@ li {
 
 .middle-content {
     margin: 50px 0px;
-}
+} 
 
 .testimony {
     font-style: italic;
-    background-color: hsl(120, 0%, 85%);
+    background-color: hsl(120, 0%, 95%);
+    padding: 75px 0px;
+}
+
+.testimony-text,
+#quote {
+    display: flex;
+    flex-wrap:wrap;
+    max-width: 600px;
+    font-size: 18px;
+}
+
+#quote {
+    margin-left:auto;
 }
 
 .action-text {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: 10px;
+    gap: 10px;
     padding: 30px; 
+}
+
+.action {
+    padding: 20px;
+}
+
+h1,
+h3,
+h4 {
+    margin: 0px;
+    
 }
 
 button {
@@ -114,10 +152,10 @@ button {
 }
 
 .footer {
-    background-color:hsl(240, 25%, 60%);
+    background-color: hsl(330, 50%, 20%);
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-weight: 900;
-    padding: 10px;
+    padding: 30px;
 }
 
 
